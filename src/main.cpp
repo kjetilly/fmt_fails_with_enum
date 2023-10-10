@@ -38,6 +38,11 @@ void printmatrixdoesnotcompile(const Matrix& m) {
 
 
 int main(int, char**) {
+  BlockMatrix<FieldMatrix<1, 1>> matrix_enum;
+  printmatrixcompiles(matrix_enum);
+  printmatrixdoesnotcompile(matrix_enum);
+
+  
   BlockMatrix<FieldMatrixModernCPP<1, 1>> matrix;
   printmatrixcompiles(matrix);
   printmatrixdoesnotcompile(matrix);
