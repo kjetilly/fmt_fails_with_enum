@@ -1,7 +1,7 @@
 # fmt_fails_with_enum
 Short reproducible example of how printing enums with fmt sometimes can fail with version 10 of {fmt} (tested with 10.1.1 and 10.1.0), works with version 9.1.0. This is especially relevant for printing number of rows of a Dune vector.
 
-Note that also using `static constexpr``` works:
+Note that also using `static constexpr` works:
 
 ```C++
 template<int ROWS, int COLS>
